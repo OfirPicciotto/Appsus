@@ -38,7 +38,7 @@ export function Home() {
 
       <div className="about-team">
         <article className="social-container">
-          <img className="social-img" src="img/ofir.jpg" />
+          <img className="social-img" src="./img/ofir.JPG" />
           <h3 className="social-header">Ofir Picciotto</h3>
           <p className="social-info">Hey I am Ofir, 36 years old, a fullstack developer from Beachwood, Ohio.</p>
           <div className="social-links">
