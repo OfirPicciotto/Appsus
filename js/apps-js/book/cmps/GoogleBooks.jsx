@@ -22,10 +22,11 @@ export class GoogleBooks extends React.Component {
         const { title } = this.state;
         return (
             <section className="google-books">
+                <img src="img/search.svg" alt="search.svg"/>
                 <input type="search"
                     name="title"
                     id="title"
-                    placeholder="Search Google 🔍"
+                    placeholder="Search Google"
                     autoComplete="off"
                     value={title}
                     onChange={this.onSearchChange} />

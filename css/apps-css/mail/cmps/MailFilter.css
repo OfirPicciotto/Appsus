@@ -24,6 +24,11 @@
     border: 2px solid rgb(26, 62, 141);
 }
 
+.mail-filter img{
+    width: 25px;
+    height: 25px;
+}
+
 /* FILTER */
 
 .mail-filter select {

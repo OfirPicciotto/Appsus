@@ -32,7 +32,7 @@ export class MailToolbar extends React.Component {
                     <Link to={`/mail/starred`}>
                         <div className={`starred-btn ${currentDisplay === 'starred' ? 'active' : ''}`}
                             onClick={() => onSetDisplay('starred')}>
-                            <img src="./img/star-full.svg" />{width >= 660 && 'Starred'} </div>
+                            <img src="./img/star.svg" />{width >= 660 && 'Starred'} </div>
                     </Link>
 
                     <Link to={`/mail/sent`}>

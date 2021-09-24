@@ -33,10 +33,11 @@ export class MailFilter extends React.Component {
         const { onSetDisplay, currDisplay } = this.props;
         return (
             <form className='mail-filter' onSubmit={this.onFilter}>
+                <img src="img/search.svg" alt="search.svg"/>
                 <input
                     name='search-bar'
                     type='search'
-                    placeholder='🔍 Search...'
+                    placeholder='Search...'
                     value={txt}
                     onChange={this.handleChange}
                 />

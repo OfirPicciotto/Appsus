@@ -26,6 +26,14 @@
     height: 30px;
 }
 
+.toolbar-btns div {
+    padding: 5px;
+}
+.toolbar-btns div img {
+    width: 30px;
+    height: 30px;
+}
+
 .toolbar-btns {
     display: flex;
     flex-direction: column;
@@ -35,41 +43,61 @@
 
 .toolbar-btns div {
     cursor: pointer;
-    padding: 10px;
+    padding: 5px;
     gap: 10px;
     display: flex;
     align-items: center;
     transition: background-color 0.2s ease-in;
 }
 
+.compose-btn:hover {
+    filter: invert(39%) sepia(100%) saturate(2591%) hue-rotate(328deg) brightness(102%) contrast(94%);
+}
+
+.inbox-btn:hover {
+    filter: invert(64%) sepia(20%) saturate(5019%) hue-rotate(317deg) brightness(87%) contrast(101%);
+}
+
+.starred-btn:hover {
+    filter: invert(75%) sepia(78%) saturate(732%) hue-rotate(325deg) brightness(104%) contrast(101%);
+}
+
+.sent-btn:hover {
+    filter: invert(71%) sepia(76%) saturate(809%) hue-rotate(304deg) brightness(101%) contrast(105%);
+}
+
+.drafts-btn:hover {
+    filter: invert(38%) sepia(99%) saturate(917%) hue-rotate(145deg) brightness(93%) contrast(101%);
+}
+
+.trash-btn:hover {
+    filter: invert(47%) sepia(95%) saturate(6195%) hue-rotate(5deg) brightness(105%) contrast(104%);
+}
+
 /* TOOLBAR ACTIVE */
 
 .compose-btn.active {
-    filter: invert(64%) sepia(15%) saturate(7464%) hue-rotate(355deg) brightness(87%) contrast(96%);
+    filter: invert(39%) sepia(100%) saturate(2591%) hue-rotate(328deg) brightness(102%) contrast(94%);
 }
 
 .inbox-btn.active {
-    background-color: #e0404059;
+    filter: invert(64%) sepia(20%) saturate(5019%) hue-rotate(317deg) brightness(87%) contrast(101%);
 }
 
 .starred-btn.active {
-    background-color: #f6900970;
+    filter: invert(75%) sepia(78%) saturate(732%) hue-rotate(325deg) brightness(104%) contrast(101%);
 }
 
 .sent-btn.active {
-    background-color: #25a5db70;
+    filter: invert(71%) sepia(76%) saturate(809%) hue-rotate(304deg) brightness(101%) contrast(105%);
 }
 
 .drafts-btn.active {
-    background-color: #369f0f4d;
+    filter: invert(38%) sepia(99%) saturate(917%) hue-rotate(145deg) brightness(93%) contrast(101%);
 }
 
 .trash-btn.active {
-    background-color: #5151514d;
-}
-
-.toolbar-btns div:hover {
-    box-shadow: 1px 1px 5px rgb(63, 61, 61);
+    filter: invert(47%) sepia(95%) saturate(6195%) hue-rotate(5deg) brightness(105%) contrast(104%);
 }
 
 .unread-msg {
@@ -122,9 +150,7 @@
         flex-direction: row;
         margin-top: 0px;
     }
-    .toolbar-btns div {
-        padding: 5px;
-    }
+
     .toolbar-btns div img {
         width: 35px;
     }
