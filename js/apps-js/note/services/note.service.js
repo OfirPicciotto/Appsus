@@ -135,7 +135,7 @@ function _createNotes() {
       labels: [],
       info: {
         url: "https://picsum.photos/200",
-        title: "Image Note Sample"
+        title: "Note With Image - Sample"
       },
       style: {
         bgColor: 'rgb(114, 114, 253)'
@@ -146,10 +146,10 @@ function _createNotes() {
       type: "note-todos",
       labels: [],
       info: {
-        label: "Checklist Note Sample",
+        label: "Note With Checklist - Sample",
         todos: [
           {
-            txt: "Taking Out The Dog", doneAt: null, isDone: false,
+            txt: "Take the dog out", doneAt: null, isDone: false,
             id: utilService.makeId()
           },
           {
@@ -168,7 +168,7 @@ function _createNotes() {
       labels: [],
       info: {
         url: "http://www.youtube.com/embed/dQw4w9WgXcQ",
-        title: "Video Note Sample"
+        title: "Note With Video - Sample"
       },
       style: {
         bgColor: 'rgb(243, 243, 114)'
