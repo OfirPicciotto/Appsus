@@ -1,0 +1,72 @@
+/* NAV-BAR */
+
+header {
+    background-color: #EEEEEE;
+    color: #fff;
+}
+
+header a {
+    color: #fff;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.app-header h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    letter-spacing: 3px;
+    text-shadow: -2px 2px 10px #FF3F00;
+    cursor: pointer;
+    transition: text-shadow 0.2s;
+    color: #071221;
+}
+
+.app-header h1:hover {
+    text-shadow: -2px 2px 20px #FAFF00;
+}
+
+/* NAVBAR   */
+
+.nav-bar {
+    display: flex;
+}
+
+.app-header a {
+    transition: color 0.25s ease-in-out;
+    padding: 15px;
+}
+
+.nav-btn {
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    transition: text-shadow 0.2s ease-out;
+}
+
+.book-nav:hover {
+    filter: invert(43%) sepia(91%) saturate(340%) hue-rotate(83deg) brightness(101%) contrast(92%);
+}
+
+.mail-nav:hover {
+    filter: invert(48%) sepia(12%) saturate(7432%) hue-rotate(331deg) brightness(89%) contrast(93%);
+}
+
+.note-nav:hover {
+    filter: invert(70%) sepia(44%) saturate(2344%) hue-rotate(2deg) brightness(105%) contrast(105%);
+}
+
+@media screen and (max-width: 400px) {
+    .app-header {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .app-header h1 {
+        font-size: 1.8em;
+    }
+}

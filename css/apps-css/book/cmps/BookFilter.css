@@ -1,0 +1,47 @@
+/* FILTER  */
+
+.book-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.book-filter input {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    border-radius: 8px;
+    width: 100%;
+    margin: 0 15px;
+}
+
+.book-filter input:focus {
+    box-shadow: 0px 0px 3px 0px #3a86eb;
+}
+
+.book-filter input[name="title"] {
+    width: 180px;
+}
+
+.book-filter input:not([name="title"]) {
+    width: 100px;
+}
+
+@media screen and (max-width: 660px) {
+    .book-filter {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .book-filter input[name="title"] {
+        width: 90%;
+    }
+    .filter-price {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,30 @@
+/* PREV */
+
+.book-preview {
+    display: flex;
+    background-color: #c9ccd5;
+    color: #716f81;
+    box-shadow: rgb(48 74 149 / 80%) 5px 5px 10px 2px;
+    transition: opacity 0.3s ease-out;
+    height: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-preview:hover {
+    box-shadow: thistle 5px 5px 10px 2px;
+}
+
+.book-preview img {
+    width: 120px;
+    height: 160px;
+}
+
+@media screen and (max-width: 660px) {
+    .book-preview {
+        flex: 1;
+        width: 90%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,64 @@
+/* COMPOSE */
+
+.mail-compose {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mail-compose input, textarea {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 1em;
+    resize: none;
+}
+
+.mail-compose input:focus, textarea:focus {
+    box-shadow: 0px 0px 3px 0px #e74c3c;
+}
+
+.mail-compose input {
+    margin-bottom: 10px;
+}
+
+.mail-compose textarea {
+    margin-bottom: 15px;
+    resize: none;
+}
+
+.mail-compose-btns {
+    display: flex;
+    justify-content: center;
+}
+
+.compose-send-btn {
+    height: 2.5em;
+    padding: 10px 20px;
+    font-size: 2em;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    color: #696666;
+    background-color: #fff;
+    border-radius: 2em;
+    border: 0.15em solid #F9C23C;
+    transition: all 0.25s ease-out;
+}
+
+.compose-send-btn:hover {
+    color: #fff;
+    background-color: #EAA502;
+    border-color: #EAA502;
+}
+
+.compose-send-btn:hover::after{
+    content: url(../../../../img/send-icon.svg);
+}
+
+@media screen and (max-width: 660px) {
+    .mail-compose {
+        width: 100%;
+    }
+}

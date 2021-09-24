@@ -1,0 +1,62 @@
+/* FONTS */
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url(https://fonts.googleapis.com/css?family=Merriweather);
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@1,200&display=swap');
+} 
+
+@font-face {
+    font-family: 'Gemunu Libre', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Be Vietnam Pro', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ffffff, #FAF3F3);
+}
+
+/* BASE  */
+
+button, select {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* MAIN LAYOUT */
+
+.main-layout {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.loader {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}

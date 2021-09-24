@@ -1,0 +1,118 @@
+/* DETAILS */
+
+.book-details {
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    padding: 15px 0;
+    background-color: #4a0e81;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.book-details * {
+    margin: 5px 0;
+}
+
+.veteran-book {
+    color: #E7E0C9
+}
+
+.new-book {
+    color: rgb(26, 235, 50);
+}
+
+.page-count-long {
+    color: rgb(186, 49, 25);
+}
+
+.page-count-decent {
+    color: rgb(226, 215, 59);
+}
+
+.page-count-light {
+    color: rgb(163, 253, 234);
+}
+
+.sale {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 7px;
+    margin: 15px 0;
+    background-color: orange;
+    font-style: italic;
+}
+
+.low-price {
+    color: rgb(54, 149, 54);
+}
+
+.high-price {
+    color: rgb(224, 33, 15);
+}
+
+.read-more {
+    margin: 0px 0.5em;
+    cursor: pointer;
+    color: #bab1b1;
+    transition: color 0.2s ease-in-out;
+}
+
+.read-more:hover {
+    color: #dfdcb2;
+}
+
+.book-details p {
+    font-size: 1.1em;
+    margin: 15px 10px;
+}
+
+/* ACTIONS BUTTONS  */
+
+.actions {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.actions button {
+    width: 150px;
+}
+
+.back-btn {
+    background-color: #447429;
+}
+
+.delete-btn {
+    background-color: #e4312e;
+}
+
+.next-btn {
+    background-color: #20a3d6;
+}
+
+.delete-btn, .back-btn, .next-btn {
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    transition: opacity 0.4s ease-in-out;
+    color: #fff;
+    opacity: 1;
+}
+
+.delete-btn:hover, .back-btn:hover, .next-btn:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 660px) {
+    .book-details img {
+        max-width: 250px;
+    }
+    .actions {
+        flex-direction: column;
+    }
+}

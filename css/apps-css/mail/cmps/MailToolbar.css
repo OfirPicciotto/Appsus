@@ -1,0 +1,131 @@
+/* TOOLBAR */
+
+.mail-toolbar {
+    justify-self: start;
+    grid-row: 2;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.compose-btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    transition: all 0.2s;
+}
+
+.compose-btn:hover {
+    filter: invert(64%) sepia(15%) saturate(7464%) hue-rotate(355deg) brightness(87%) contrast(96%);
+}
+
+.compose-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.toolbar-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.toolbar-btns div {
+    cursor: pointer;
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s ease-in;
+}
+
+/* TOOLBAR ACTIVE */
+
+.compose-btn.active {
+    filter: invert(64%) sepia(15%) saturate(7464%) hue-rotate(355deg) brightness(87%) contrast(96%);
+}
+
+.inbox-btn.active {
+    background-color: #e0404059;
+}
+
+.starred-btn.active {
+    background-color: #f6900970;
+}
+
+.sent-btn.active {
+    background-color: #25a5db70;
+}
+
+.drafts-btn.active {
+    background-color: #369f0f4d;
+}
+
+.trash-btn.active {
+    background-color: #5151514d;
+}
+
+.toolbar-btns div:hover {
+    box-shadow: 1px 1px 5px rgb(63, 61, 61);
+}
+
+.unread-msg {
+    font-size: 0.8em;
+    color: #6954c5;
+}
+
+.unread-container {
+    width: 100%;
+    box-shadow: 0px 0px 3px 0px #4b2ed3;
+    background: linear-gradient(#c5cfe7, #b3c9f3);
+}
+
+.unread-percent {
+    background: linear-gradient(#3e62b4, #3925e7);
+    color: #fff;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+@media screen and (max-width: 660px) {
+    .mail-filter {
+        flex-wrap: wrap;
+    }
+    .mail-toolbar {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+    .unread-container {
+        display: none;
+    }
+    .compose-btn {
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        outline: none;
+    }
+    .compose-btn img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .toolbar-btns {
+        flex-direction: row;
+        margin-top: 0px;
+    }
+    .toolbar-btns div {
+        padding: 5px;
+    }
+    .toolbar-btns div img {
+        width: 35px;
+    }
+}

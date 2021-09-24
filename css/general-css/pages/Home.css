@@ -1,0 +1,144 @@
+/* HOME */
+
+.home {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 3em;
+    letter-spacing: 3px;
+    text-shadow: 6px 4px 4px #FF3F00;
+    animation: breathe 3s ease-in-out infinite alternate running;
+}
+
+@keyframes breathe {
+    from { transform: scale(0.9); }
+    to { transform: scale(1.2); }
+}
+/* ABOUT */
+
+.about {
+    text-align: center;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* APPS  */
+
+.about-comps {
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.about-comps aside {
+    width: 285px;
+    border: 1px solid rgba(54, 51, 51, 0.363);
+    background-color: rgba(255, 255, 255, 0.746);
+}
+
+.about-comps a {
+    font-style: oblique;
+    text-shadow: 1px 1px 1px rgba(56, 54, 54, 0.459);
+    transition: color 0.4s ease-in-out;
+}
+
+.about-comps a:hover {
+    color: #512d6d;
+}
+
+.book-link {
+    color: #32a350;
+}
+
+.mail-link {
+    color: #dc5247;
+}
+
+.note-link {
+    color: #ffba00;
+}
+
+/* TEAM */
+
+.team-header {
+    text-align: center;
+    color: #444941;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 0.1em;
+    font-size: 2em;
+}
+
+.about-team {
+    display: flex;
+    width: 100%;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #444941;
+}
+
+.social-container {
+    align-items: center;
+    width: 450px;
+    height: 450px;
+    box-shadow: 0px 0px 5px 1px #3f39399c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.534);
+}
+
+.social-img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 1px #3f39399c;
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+}
+
+.social-header {
+    color: black;
+    letter-spacing: 2px;
+    font-family: "Gemunu Libre";
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.social-info {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.05em;
+    color: rgb(41, 39, 39);
+}
+
+.social-links {
+    gap: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 44px;
+    transition: transform 0.2s ease-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 978px) {
+    .about-comps {
+        flex-direction: column;
+        align-items: center;
+    }
+}

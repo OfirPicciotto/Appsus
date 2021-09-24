@@ -1,0 +1,15 @@
+/* NOTES LIST */
+.notes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+
+
+@media only screen and (max-width: 660px){
+  .notes-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
