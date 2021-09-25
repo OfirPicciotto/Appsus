@@ -133,14 +133,7 @@
     .unread-container {
         display: none;
     }
-    .compose-btn {
-        background-color: transparent;
-        background-repeat: no-repeat;
-        border: none;
-        cursor: pointer;
-        overflow: hidden;
-        outline: none;
-    }
+
     .compose-btn img {
         width: 20px;
         height: 20px;
