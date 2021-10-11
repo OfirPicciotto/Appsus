@@ -8,17 +8,17 @@ export const utilService = {
 
 function debounce(func, wait) {
     let timeout;
-  
+
     return function (...args) {
-      const later = () => {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+
         clearTimeout(timeout);
-        func(...args);
-      };
-  
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
+        timeout = setTimeout(later, wait);
     };
-  };
+};
 
 function makeId(length = 20) {
     var txt = '';

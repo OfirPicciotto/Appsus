@@ -12,7 +12,7 @@ function emit(eventName, data) {
     window.dispatchEvent(new CustomEvent(eventName, { detail: data }));
 }
 
-export const eventBusService =  { on, emit }
+export const eventBusService = { on, emit }
 
 window.myBus = eventBusService
 
